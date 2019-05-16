@@ -1,0 +1,17 @@
+
+  <div class="card m-3" style="width: 20rem;" [ngClass]="shadow" (mouseover)="shadow='shadow-lg'" (mouseout)="shadow='shadow'">
+    <img class="card-img-top" src="https://a.wattpad.com/useravatar/Random-O-Person.256.446444.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title font-weight-bold">{{product.name}}</h5>
+      <h6 class="text-info">  <app-rating></app-rating><br>
+      </h6> 
+       <small class="card-text font-weight-light">{{product.desc | slice:1:45}} <a href="#">...</a></small>
+      <h6> {{product.price | currency:'INR'}}</h6>
+    
+
+      <div class="btn-group mt-2 mb-0 shadow" >
+          <button class="btn  btn-primary ">Buy</button>
+          <button class="btn  btn-danger ">Add to Cart</button></div>
+        </div> 
+    
+  </div>
